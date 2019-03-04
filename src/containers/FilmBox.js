@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import FilmList from "../components/FilmList";
 
 class FilmBox extends Component{
     constructor(props){
@@ -35,7 +36,9 @@ class FilmBox extends Component{
     render(){
         return (
             <div className = "film-container">
-                Hello World!
+                <h1>Upcoming Film Releases For UK</h1>
+                <FilmList data = {this.state.data}></FilmList>
+                <button><a href="https://www.imdb.com/calendar/?region=gb">Click here for more...</a></button>
             </div>
         )
         
